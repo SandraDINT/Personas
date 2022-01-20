@@ -11,7 +11,8 @@
                     DockPanel.Dock="Top"
                     Margin="10">
             <Button Content="Nueva persona"
-                    Width="150">
+                    Width="150"
+                    Command="{Binding Path=AbrirNuevaPersonaCommand}">
                 
             </Button>
             <Button Content="Listado de personas"

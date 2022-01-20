@@ -33,12 +33,13 @@ namespace Personas.vistaModeloPrincipal
         }
         private void AbrirListadoPersonas()
         {
-            _contenidoVentana = navigation.ObtenerListadoPersonas();
+            ContenidoVentana = navigation.ObtenerListadoPersonas();
         }
         private void AbrirNuevaPersona()
         {
-            _contenidoVentana = navigation.ObtenerNuevaPersona();
+            ContenidoVentana = navigation.ObtenerNuevaPersona();
         }
+       
         
     }
 }

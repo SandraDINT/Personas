@@ -17,7 +17,7 @@ using System.Windows.Shapes;
 namespace Personas.VistasXAML
 {
     /// <summary>
-    /// Lógica de interacción para NuevaPartidaUserControl.xaml
+    /// Lógica de interacción para NuevaPersonaUserControl.xaml
     /// </summary>
     public partial class NuevaPersonaUserControl : UserControl
     {

@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Navigation;
 
-namespace Personas.VistasMvvm
+namespace Personas
 {
     class NuevaPersonaMvvm : ObservableObject
     {
@@ -30,7 +30,8 @@ namespace Personas.VistasMvvm
         public NuevaPersonaMvvm()
         {
             navigation = new NavigationService();
-            NuevaPersona = new Persona();
+            _nuevaPersona = new Persona();
+            Nacionalidades = new ObservableCollection<string>() { "Española", "Guineana", "China", "Japonesa", "Marfileña", "Francesa" };
         }
     }
 }

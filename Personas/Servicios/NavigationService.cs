@@ -8,24 +8,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 
-namespace Personas.Servicios
+namespace Personas
 {
-    class NavigationService
+    public class NavigationService
     {
         private static readonly UserControl personas =
             new ListadoPersonasUserControl();
 
         public NavigationService()
         {
-
         }
+
         public UserControl ObtenerNuevaPersona()
         {
-            return new NuevaPartidaUserControl();
+            return new NuevaPersonaUserControl();
         }
         public UserControl ObtenerListadoPersonas()
         {
-            return new ListadoPersonasUserControl();
+            return personas;
         }
     }
 }
