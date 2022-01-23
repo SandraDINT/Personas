@@ -86,8 +86,12 @@
     <Compile Include="Servicios\NavigationService.cs" />
     <Compile Include="Servicios\PersonasService.cs" />
     <Compile Include="ClasePrincipal\PersonasMvvm.cs" />
+    <Compile Include="VistasMvvm\DialogoAddNacionalidadMvvm.cs" />
     <Compile Include="VistasMvvm\ListaPersonasMvvm.cs" />
     <Compile Include="VistasMvvm\NuevaPersonaMvvm.cs" />
+    <Compile Include="VistasXAML\DialogoAddNacionalidad.xaml.cs">
+      <DependentUpon>DialogoAddNacionalidad.xaml</DependentUpon>
+    </Compile>
     <Compile Include="VistasXAML\ListadoPersonasUserControl.xaml.cs">
       <DependentUpon>ListadoPersonasUserControl.xaml</DependentUpon>
     </Compile>
@@ -106,6 +110,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="VistasXAML\DialogoAddNacionalidad.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="VistasXAML\ListadoPersonasUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

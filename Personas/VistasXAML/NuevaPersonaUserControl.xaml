@@ -15,7 +15,12 @@
 
         <TextBlock Text="Nacionalidad" />
         <StackPanel Orientation="Horizontal">
-            <ComboBox ItemsSource="{Binding Path=Nacionalidades}" />
+            <ComboBox ItemsSource="{Binding Path=Nacionalidades, UpdateSourceTrigger=PropertyChanged}" 
+                      Width="100"/>
+            <Button Content="+"
+                    Margin="10,0,0,0"
+                    Command="{Binding Path=AbrirDialogoCommand}"
+                    Width="25"/>
         </StackPanel>
     </StackPanel>
 </UserControl>

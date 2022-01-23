@@ -30,6 +30,7 @@ namespace Personas.vistaModeloPrincipal
             navigation = new NavigationService();
             AbrirListadoPersonasCommand = new RelayCommand(AbrirListadoPersonas);
             AbrirNuevaPersonaCommand = new RelayCommand(AbrirNuevaPersona);
+
         }
         private void AbrirListadoPersonas()
         {

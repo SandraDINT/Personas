@@ -27,5 +27,11 @@ namespace Personas
         {
             return personas;
         }
+        public bool AddNacionalidad()
+        {
+            DialogoAddNacionalidad dialogo = new DialogoAddNacionalidad();
+            dialogo.ShowDialog();
+            return true;
+        }
     }
 }

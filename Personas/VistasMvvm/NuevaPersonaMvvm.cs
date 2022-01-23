@@ -1,4 +1,6 @@
 ﻿using Microsoft.Toolkit.Mvvm.ComponentModel;
+using Microsoft.Toolkit.Mvvm.Input;
+using Personas.VistasMvvm;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -12,6 +14,9 @@ namespace Personas
     class NuevaPersonaMvvm : ObservableObject
     {
         private readonly NavigationService navigation;
+        public RelayCommand AbrirDialogoCommand { get; }
+
+        private DialogoAddNacionalidadMvvm dialogo;
 
         private Persona _nuevaPersona;
         public Persona NuevaPersona
@@ -30,8 +35,14 @@ namespace Personas
         public NuevaPersonaMvvm()
         {
             navigation = new NavigationService();
+            AbrirDialogoCommand = new RelayCommand(AbrirAddNacionalidad);
             _nuevaPersona = new Persona();
             Nacionalidades = new ObservableCollection<string>() { "Española", "Guineana", "China", "Japonesa", "Marfileña", "Francesa" };
+            dialogo = new DialogoAddNacionalidadMvvm(_nacionalidades);
+        }
+        private void AbrirAddNacionalidad()
+        {
+            navigation.AddNacionalidad();
         }
     }
 }
